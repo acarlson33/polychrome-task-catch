@@ -1,6 +1,6 @@
 # Polychrome Capture (Chrome extension)
 
-Quick scaffolding to scrape assignments (tuned for Schoology) and send them to Polychrome via `POST /api/tasks`.
+Extension to scrape assignments (tuned for Schoology) and send them to Polychrome via `POST /api/tasks`.
 
 ## Description
 
@@ -33,7 +33,7 @@ Polychrome Capture is a Chrome extension that scans supported course pages, extr
 
 ## API payload shape
 
-Sent payload follows [`API_REQUIREMENTS.md`](../API_REQUIREMENTS.md):
+Sent payload follows polychrome API requirements:
 
 ```json
 {
