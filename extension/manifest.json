@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Polychrome Capture",
+  "description": "Capture assignments and due dates from web pages and send to Polychrome.",
+  "version": "0.1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://polychrome.appwrite.network/*"],
+  "optional_host_permissions": ["http://localhost:3000/*"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save to Polychrome",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
