@@ -5,7 +5,6 @@ node_modules/
 build/
 dist/
 *.zip
-*.crx
 *.pem
 
 # Environment secrets

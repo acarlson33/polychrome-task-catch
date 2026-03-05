@@ -107,6 +107,14 @@
             <option value="dev">Localhost</option>
           </select>
         </div>
+        <div class="parser-selector">
+          <label for="confidence-mode">Parser</label>
+          <select id="confidence-mode">
+            <option value="recall">High Recall</option>
+            <option value="balanced" selected>Balanced</option>
+            <option value="precision">High Precision</option>
+          </select>
+        </div>
         <button id="save" class="primary-btn">
           <svg
             width="14"
@@ -126,6 +134,39 @@
           Save to Polychrome
         </button>
       </div>
+      <div class="parser-options">
+        <label class="check-label" for="include-undated">
+          <input id="include-undated" type="checkbox" />
+          Include likely tasks without parseable due date
+        </label>
+        <label class="text-label" for="blocked-title-phrases">
+          Blocked title phrases (one per line)
+        </label>
+        <textarea
+          id="blocked-title-phrases"
+          rows="3"
+          placeholder="Examples:
+STEMscopes 4.0 and Math Nation
+privacy policy"
+        ></textarea>
+        <label class="text-label" for="max-past-years">
+          Max past due age (years, blank = no limit)
+        </label>
+        <input
+          id="max-past-years"
+          type="number"
+          min="0"
+          max="50"
+          step="1"
+          placeholder="2"
+        />
+      </div>
+      <details id="parser-debug" class="parser-debug">
+        <summary>Parser debug</summary>
+        <div id="parser-debug-body" class="parser-debug-body">
+          No parser run yet.
+        </div>
+      </details>
       <div id="status" class="status hidden"></div>
     </footer>
     <script src="popup.js"></script>
