@@ -7,7 +7,7 @@ Extension to scrape assignments and due dates from web pages and send them to Po
 - Current release: **1.0.0**
 - Manifest: `extension/manifest.json`
 - Target: Chrome MV3 (minimum Chrome 114)
-- Release notes template: `RELEASE_NOTES_1.0.0.md`
+- Release notes: `RELEASE_NOTES_1.0.0.md`
 
 ## Description
 
